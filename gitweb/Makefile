@@ -122,7 +122,6 @@ $(MAK_DIR_GITWEB)static/gitweb.js: $(addprefix $(MAK_DIR_GITWEB),$(GITWEB_JSLIB_
 	mv $@+ $@
 
 ### Installation rules
-
 .PHONY: install-gitweb
 install-gitweb: $(MAK_DIR_GITWEB_ALL)
 	$(INSTALL) -d -m 755 '$(DESTDIR_SQ)$(gitwebdir_SQ)'
